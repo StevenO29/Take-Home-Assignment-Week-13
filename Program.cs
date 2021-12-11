@@ -45,13 +45,11 @@ namespace Take_Home_Assignment_Week_13
                     var namaScroll = Console.ReadLine().ToLower();
                     int counter = 0;
                     for (int mencariScroll =0; mencariScroll < scrolls.Count; mencariScroll++)
-                    {
                         if (namaScroll == scrolls[mencariScroll].ToLower())
                         {
                             Console.WriteLine($"Book found. Queue number : {mencariScroll + 1}\n");
                             counter++;
                         }
-                    }
                     if (counter == 0)
                         Console.WriteLine("Book not found\n");
                 }
@@ -71,14 +69,12 @@ namespace Take_Home_Assignment_Week_13
                         var menghapusNamaList = Console.ReadLine().ToLower();
                         int counter = 0;
                         for (int menghapusNamaScroll = 0; menghapusNamaScroll < scrolls.Count; menghapusNamaScroll++)
-                        {
                             if (menghapusNamaList == scrolls[menghapusNamaScroll].ToLower())
                             {
                                 scrolls.RemoveAt(menghapusNamaScroll);
                                 Console.WriteLine("Book Removed!\n");
                                 counter++;
                             }
-                        }
                         if (counter == 0)
                             Console.WriteLine("Book not found\n");
                     }
